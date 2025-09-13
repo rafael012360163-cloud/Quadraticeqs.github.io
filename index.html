@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body style="background-color: lavender; background-image: url(WhatsApp\ Image\ 2025-08-19\ at\ 2.23.03\ PM.jpeg);">
+    <head>
+        <div class="head">
+            <br>
+            <img src="WhatsApp Image 2025-09-13 at 11.13.55 AM.jpeg" style="width: 99%">
+            <br>
+            <h1>SOLVING QUADRATIC EQUATIONS</h1>
+            <h3>Website by Davin, Felisha, Rebecca, Evans, and Nathania 9G</h3>
+            <img src="Logo_BPK_PENABUR.png" alt="Logo_BPK_PENABUR" style="width: 8%; background-color: burlywood; border-radius: 5px;">
+            <h2>What are quadratic equations?</h2>
+            <p>In mathematics, a <b>quadratic equation</b> (from Latin quadratus 'square') is an equation that can be rearranged in standard form as <b>\(ax^2 + bx + c = 0\)</b> ,<br> where the variable <b>x</b> represents an <b>unknown number</b>, and <b>a, b, and c</b> represent <b>known numbers</b>.<br>Because the quadratic equation involves only one unknown, it is called <b>"univariate"</b>. The quadratic equation contains only powers of x that are <br><b>non-negative integers</b>, and therefore it is a <b>polynomial equation</b>. In particular, it is a second-degree polynomial equation, since the greatest power is two.</p>
+            <p>Quadratic equations were solved with geometric and arithmetic methods by ancient civilizations long before modern algebra. The Babylonians (c. 2000 BCE) used completing the square to solve the equations, and the Egyptians (c. 2000-1650 BC) also explored them.</p>
+            <p>There are three ways to solve quadratic equations, which are <b>factorization</b>, <b>completing the square</b>, and <b>the quadratic formula</b>.</p>
+            <br>
+        </div>
+    </head>
+    <br>
+    <main>
+        <div class="main">
+            <h1>\(ax^2 + bx + c = 0\)</h1>
+            <div id="inputabc" class="inputabc">
+                <label for="a">Input "a"</label>
+                <input type="number" id="a" placeholder="e.g., 6">
+
+                <label for="b">Input "b"</label>
+                <input type="number" id="b" placeholder="e.g., -2">
+
+                <label for="c">Input "c"</label>
+                <input type="number" id="c" placeholder="e.g., 3">
+
+                <input type="submit" class="button" onclick="inputvalues()">
+            </div>
+            <p style="font-size: 30px;">Your equation is:</p>
+            <b><span style="font-size: 30px;" id="eq"></span></b>
+            <br>
+            <div style="display: none;" id="choosemethod">
+                <label for="method">Which method would you like to use?</label>
+                <select name="methodlist" id="methodselect">
+                    <option value="factor">Factorisation</option>
+                    <option value="square">Complete the Square</option>
+                    <option value="formula">Quadratic Formula</option>
+                </select>
+                <input type="submit" class="button" id="method" onclick="nextmethod()">
+            </div>
+            <div style="display: none;" id="tampilanfactor">
+                <h2>Factorisation</h2>
+                <p id="soalfactor">...</p>
+                <b><p id="wayfactor"></p></b>
+                <h1 id="solutionfactor">solutionfactor</h1>
+            </div>
+            <div style="display: none;" id="tampilansquare">
+                <h2>Completing the Square</h2>
+                <p id="soalsquare">...</p>
+                <b><p id="waysquare">...</p></b>
+                <h1 id="solutionsquare">solutionsquare</h1>
+            </div>
+            <div style="display: none;" id="tampilanformula">
+                <h2>Quadratic Formula</h2>
+                <p id="soalformula">...</p>
+                <b><p id="wayformula">...</p></b>
+                <h1 id="solutionformula">solutionformula</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
